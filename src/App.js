@@ -10,7 +10,7 @@ import './assets/App.css'
 
 const App = () => {
   return (
-    <div className='app-container'>
+    <>
       <Router>
         <Navbar/>
         <Routes>
@@ -21,7 +21,7 @@ const App = () => {
         </Routes>
 
       </Router>
-    </div>
+    </>
   )
 }
 

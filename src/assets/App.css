@@ -1,5 +1,5 @@
 :root{
-    --header-background: rgb(240, 242, 242);
+    --page-background: rgb(240, 242, 242);
     --header-hover-textcolor: #fff;
     --sidebar-hover-background: rgb(55, 55, 55);
 
@@ -7,29 +7,20 @@
     --header-list-size: .9em;
     --header-list-hover-height:1.8em; 
     --sidebar-list-size: 1em;
+    --sidebar-list-height: 6vh;
 }
 
-/* 
-    App 
-*/
-.app-container{
-    padding-top: 0.05em;
-    padding-bottom: 5.5em;
-    background-color: var(--header-background) ;
+body{
+    background-color: var(--page-background);
 }
 
 /* 
     Nav bar 
 */
-/* container */
-.container{
-    background-color: var(--header-background);
-}
 
 /* Header */
 header {
     display: block;
-    background-color: var(--header-background);
     margin-left: -2.5em;
 }
 
@@ -75,9 +66,8 @@ header ul li a:hover{
     margin-top: -2%;
     background-color: transparent;
     position:relative;
-    transition: all 0.8s ease;
+    transition: all 0.4s ease;
     padding-bottom: 0.1px;
-
 }
 
 .nav-sidebar{
@@ -92,7 +82,7 @@ header ul li a:hover{
 }
 
 .nav-sidebar.active ul li{
-    height: 5vh;
+    height: var(--sidebar-list-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +99,7 @@ header ul li a:hover{
 }
 
 .nav-sidebar-link {
-    font-size: 0.9em;
+    font-size: var(--sidebar-list-size);
     text-decoration: none;
     color: #000;
 }
@@ -118,7 +108,6 @@ header ul li a:hover{
 /* Home page */
 .home-container{
     display: flex;
-    background-color: var(--header-background);
 }
 
 .home-selfie{
