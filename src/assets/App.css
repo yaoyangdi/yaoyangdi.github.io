@@ -1,0 +1,249 @@
+:root{
+    --header-background: rgb(240, 242, 242);
+    --header-hover-textcolor: #fff;
+    --sidebar-hover-background: rgb(55, 55, 55);
+
+    /* font size */
+    --header-list-size: .9em;
+    --header-list-hover-height:1.8em; 
+    --sidebar-list-size: 1em;
+}
+
+/* 
+    App 
+*/
+.app-container{
+    padding-top: 0.05em;
+    padding-bottom: 5.5em;
+    background-color: var(--header-background) ;
+}
+
+/* 
+    Nav bar 
+*/
+/* container */
+.container{
+    background-color: var(--header-background);
+}
+
+/* Header */
+header {
+    display: block;
+    background-color: var(--header-background);
+    margin-left: -2.5em;
+}
+
+header ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2em;
+}
+
+header ul li{
+    margin-left: 2em;
+    height: var(--header-list-hover-height);
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    transition: 0.2s;
+    color: #000;
+}
+
+header ul li:hover{
+    background-color: var(--sidebar-hover-background);
+    color: var(--header-hover-textcolor);
+    transition: 0.2s;
+}
+
+header ul li a{
+    display: inline-flex;
+    justify-content: center;
+    font-size: var(--header-list-size);
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul li a:hover{
+    transition: 0.2s;
+}
+
+/* sidebar */
+.nav-sidebar.active {
+    margin-top: -2%;
+    background-color: transparent;
+    position:relative;
+    transition: all 0.8s ease;
+    padding-bottom: 0.1px;
+
+}
+
+.nav-sidebar{
+    margin-top: -80%;
+    position:fixed;
+}
+
+.nav-sidebar ul li{
+    display: block;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.nav-sidebar.active ul li{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-sidebar.active ul {
+    width: 90%;
+}
+
+.nav-sidebar li:hover{
+    color: #fff;
+    background-color: var(--sidebar-hover-background);
+    transition: 0.6s;
+}
+
+.nav-sidebar-link {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Home page */
+.home-container{
+    display: flex;
+    background-color: var(--header-background);
+}
+
+.home-selfie{
+    margin-left: 2.5%;
+}
+.home-selfie img{
+    width: 12em;
+    border-radius: 0.5em;
+}
+
+.home-selfie-desc{
+    width: 10em;
+}
+
+.home-selfie-desc h1{
+    text-align: center;
+    line-height: 0.8em;
+    font-size: 1.5em;
+    color:rgb(61, 134, 182);
+}
+
+.home-selfie-desc p{
+    font-size: 0.75em;
+}
+
+.home-content-container{
+    width: 100%;
+}
+
+.home-content-container h1{
+    text-align: center;
+    line-height: 0.5em;
+    font-size: 1.5em;
+}
+
+.home-content-intro{
+    margin-left: 2em;
+    margin-right:2em;
+    text-align: start;
+}
+
+.home-content h1{
+    text-align: start;
+    font-size: 1.5em;
+    margin-left: 1.5em;
+    margin-top: 2em;
+    line-height: 0.5em;
+}
+.home-content p{
+    margin-left: 2.3em;
+    margin-right: 2.3em;
+    font-size: 1em;
+}
+
+
+@media only screen and (max-width: 640px) {
+    header {
+    height: 4em;
+    }
+    header ul {
+        display: none;
+    }
+
+    /* sidebar menu icon */
+    .nav-sidebar-icon{
+        width:2.7em;
+        height:3em;
+        margin-left: 10%;
+        background: transparent;
+        z-index:9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-sidebar-icon::before{
+        content:'';
+        width:50%;
+        height: 0.19em;
+        background:rgb(86, 162, 212);
+        transform: translateY(-0.2em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon:hover::before{
+        content:'';
+        width:50%;
+        height: 0.19em;
+        background:rgb(2, 2, 2);
+        transform: translateY(-0.2em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon::after{
+        content:'';
+        margin-left: -50%;
+        width:50%;
+        height: 0.19em;
+        background:rgb(86, 162, 212);
+        transform: translateY(0.4em);
+        transition: 0.4s;
+    }
+    
+    .nav-sidebar-icon:hover::after{
+        content:'';
+        margin-left: -50%;
+        width:50%;
+        height: 0.19em;
+        background:rgb(2, 2, 2);
+        transform: translateY(0.4em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .nav-sidebar-icon.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+
+    .home-content-container h1{
+        text-align: center;
+        line-height: 1em;
+        font-size: 1.5em;
+    }
+}
+
