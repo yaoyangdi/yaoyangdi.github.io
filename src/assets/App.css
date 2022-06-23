@@ -146,6 +146,7 @@ header ul li a:hover{
 .home-content-intro{
     margin-left: 2em;
     margin-right:2em;
+    line-height: 1.7em;
     text-align: start;
 }
 
@@ -160,6 +161,24 @@ header ul li a:hover{
     margin-left: 2.3em;
     margin-right: 2.3em;
     font-size: 1em;
+}
+
+.home-socialIcon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: -4em;
+
+}
+.home-socialIcon.item{
+    font-size: 0.8em;
+    margin-left: 2em;
+    color:black;
+}
+
+.home-socialIcon.item:hover{
+    transform: translateY(-2px);
+    color: rgb(184, 151, 110);
 }
 
 

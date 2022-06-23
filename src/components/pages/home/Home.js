@@ -1,6 +1,14 @@
 import React, { Fragment } from 'react'
 import selfie from '../../../assets/selfie.jpg'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -17,13 +25,32 @@ const Home = () => {
           
           <div className='home-content-intro'>
             <h1>G'day, I'm Steven! 👋</h1>
+            <div className='home-socialIcon'>
+                <a href="" className='home-socialIcon item'>
+                  <FontAwesomeIcon icon={faGithub} size="2x"/>
+                </a>
+                <a href="https://www.facebook.com/ding.yaoyang/" className='home-socialIcon item'>
+                  <FontAwesomeIcon icon={faFacebook} size="2x"/>
+                </a>
+                <a href="https://twitter.com/stevending59" className='home-socialIcon item'>
+                  <FontAwesomeIcon icon={faTwitter} size="2x"/>
+                </a>
+                <a href="https://www.instagram.com/steven_di1/" className='home-socialIcon item'>
+                  <FontAwesomeIcon icon={faInstagram} size="2x"/>
+                </a>
+                <a href="https://www.linkedin.com/in/yaoyang-ding-bba6511ab/" className='home-socialIcon item'>
+                  <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+                </a>
+            </div>
+            🔘 A coder.<br/>
             🔘 A final year undergraduate student with A love for software and new technologies.<br/>
-            🔘 I firmly believe that tech must be inclusive, accessible and diverse and I considered building my own sharing website for this reason.
+            🔘 A self-motivated learner that is always willing to explore solutions toward real life challenges.<br/>
+            🔘 I firmly believe that tech must be inclusive, accessible and diverse and I considered building my own sharing website for this reason.<br/>
           </div>
           <div className='home-content'>
             <h1>From the Blog</h1>
             <p>
-              I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize all things in a better way.
+              I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way.
 
             </p>
           </div>
