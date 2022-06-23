@@ -247,11 +247,84 @@ header ul li a:hover{
     .nav-sidebar-icon.active::after{
         transform: translateY(0px) rotate(-45deg);
     }
+    
+    /* Home page */
+    .home-container{
+        display: inline-block;
+    }
+    .home-selfie{
+        text-align: center;
+
+    }
+    
+    .home-selfie img{
+        width: 8em;
+        border-radius:0.5em;
+    }
+
+    .home-selfie-desc{
+        width:100%;
+    }
+
+    .home-selfie-desc h1{
+        text-align: center;
+        line-height: 0.8em;
+        font-size: 1.8em;
+        color:rgb(61, 134, 182);
+    }
+
+    .home-selfie-desc p{
+        line-height: 0;
+        margin-left: 0.4em;
+        font-size: 0.7em;
+        color: gray;
+    }
 
     .home-content-container h1{
         text-align: center;
         line-height: 1em;
         font-size: 1.5em;
     }
+
+    .home-socialIcon{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0em;
+    
+    }
+    .home-socialIcon.item{
+        font-size: 0.7em;
+        margin-left: 0.8em;
+        color:black;
+    }
+
+    .home-content-intro{
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right:2em;
+        line-height: 1.7em;
+        text-align: start;
+    }
+
+    .home-content-intro h1{
+        font-size: 2em;
+    }
+
+    .home-content h1{
+        text-align: start;
+        font-size: 1.5em;
+        margin-top: 2em;
+        line-height: 0.5em;
+    }
+    .home-content p{
+        margin-left: 2.3em;
+        margin-right: 2.3em;
+        font-size: 1em;
+    }
+
+
+    
+    
 }
 
