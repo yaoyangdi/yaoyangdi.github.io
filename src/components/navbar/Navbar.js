@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
-import { menuData } from './menuData';
+import { menuData } from '../../assets/data/menuData';
 
 
 const Navbar = () => {

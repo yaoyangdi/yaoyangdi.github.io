@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import selfie from '../../../assets/images/selfie.jpg'
 import Card from './Card'
-import data from './BlogData'
+import data from '../../../assets/data/BlogData'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
