@@ -35,7 +35,7 @@ header ul {
     margin-left: -2em;
 }
 
-header ul li{
+.navItem{
     margin-left: 2em;
     height: var(--header-list-hover-height);
     width: 5em;
@@ -47,13 +47,19 @@ header ul li{
     color: #000;
 }
 
-header ul li:hover{
+.navItem:hover{
     background-color: var(--sidebar-hover-background);
     color: var(--header-hover-textcolor);
     transition: 0.2s;
 }
 
-header ul li a{
+.navItem.active{
+    background-color: var(--sidebar-hover-background);
+    color: var(--header-hover-textcolor);
+    transition: 0.2s;
+}
+
+.navItem a{
     display: inline-flex;
     justify-content: center;
     font-size: var(--header-list-size);

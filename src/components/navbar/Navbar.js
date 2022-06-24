@@ -6,21 +6,29 @@ import { menuData } from './menuData';
 const Navbar = () => {
     const [sidebar, setSidebar] = useState(false)
     const [toogle, setToogle] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(-1);
+
     const ref1 = useRef();
     const ref2 = useRef();      // The sidebar menu button
 
 
-    // Event listener 2: listen on the event whether the menu button is clicked => open / close the sidebar
+    // Event listener 1: listen on the event whether the menu button is clicked => open / close the sidebar
     const onToogle = () => {
         setSidebar(!sidebar);
         setToogle(!toogle);
     }
 
-    // Event listener 3: listen on event whichever nav item is clicked => close the sidebar
+    // Event listener 2: listen on event for closing the sidebar
     const sideBarCollapsed = () => {
         setSidebar(false);
         setToogle(false);
     };
+
+    // Event listener 3: listen on event whenever the navigation item is clicked
+    const navItemClicked = (index) => {
+        sideBarCollapsed();
+        setSelectedIndex(index);
+    }
 
 
     useEffect(()=>{
@@ -52,13 +60,13 @@ const Navbar = () => {
                     <div className={toogle ? 'nav-sidebar-icon active' : 'nav-sidebar-icon' }></div>
                 </Link>
 
+                {/* Navigation bar item list */}
                 <ul>
                         { menuData.map((item,index) => {
                             return (
-                                <li key={index}>
+                                <li key={index} className={index === selectedIndex ? "navItem active" : "navItem"}>
                                     <Link to={item.path}
-                                        onClick={sideBarCollapsed}
-                                        className="header-link"
+                                        onClick={() => navItemClicked(index)}
                                     >
                                         {item.title}
                                     </Link>
