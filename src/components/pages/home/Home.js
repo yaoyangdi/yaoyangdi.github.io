@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 import selfie from '../../../assets/selfie.jpg'
+import Card from './Card'
+import data from './BlogData'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -18,6 +20,11 @@ const Home = () => {
           <div className='home-selfie-desc'>
             <h1>Yaoyang Ding</h1>
             <p>Final Year BCompSci Student @ Monash University</p>
+            
+            <div className='home-selfie-desc email'>
+              <div style={{fontWeight:"bold", fontSize:"1.2em", marginRight:"0.6em"}}>email: </div> 
+                <div>dingyaoyang2019@gmail.com<br/></div> 
+            </div>
           </div>
         </div>
 
@@ -26,7 +33,7 @@ const Home = () => {
           <div className='home-content-intro'>
             <h1>G'day, I'm Steven! 👋</h1>
             <div className='home-socialIcon'>
-                <a href="" className='home-socialIcon item'>
+                <a href="https://github.com/yaoyangdi" className='home-socialIcon item'>
                   <FontAwesomeIcon icon={faGithub} size="2x"/>
                 </a>
                 <a href="https://www.facebook.com/ding.yaoyang/" className='home-socialIcon item'>
@@ -50,11 +57,19 @@ const Home = () => {
           <div className='home-content'>
             <h1>From the Blog</h1>
             <p>
-              I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way.
-
+              I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way :D
             </p>
+            <h1>Latest Reviews</h1>
+            <div className='home-content card'>
+              {data.map((val, index) => {
+                return (
+                          <Card key={index}  title={val.title} desc={val.desc} date={val.date} />
+)
+              })}
+            </div>
           </div>
 
+          
         </div>
 
 

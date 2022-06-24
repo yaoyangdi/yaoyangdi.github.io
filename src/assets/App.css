@@ -2,12 +2,16 @@
     --page-background: rgb(240, 242, 242);
     --header-hover-textcolor: #fff;
     --sidebar-hover-background: rgb(55, 55, 55);
+    --content-blue:rgb(61, 134, 182);
 
     /* font size */
     --header-list-size: .9em;
     --header-list-hover-height:1.8em; 
     --sidebar-list-size: 1em;
     --sidebar-list-height: 6vh;
+
+    /* margin */
+    --page-margin: 2.3em
 }
 
 body{
@@ -63,7 +67,7 @@ header ul li a:hover{
 
 /* sidebar */
 .nav-sidebar.active {
-    margin-top: -2%;
+    margin-top: -5%;
     background-color: transparent;
     position:relative;
     transition: all 0.4s ease;
@@ -100,6 +104,7 @@ header ul li a:hover{
 
 .nav-sidebar-link {
     font-size: var(--sidebar-list-size);
+    font-weight: 500;
     text-decoration: none;
     color: #000;
 }
@@ -122,15 +127,20 @@ header ul li a:hover{
     width: 10em;
 }
 
+.home-selfie-desc.email{
+    font-size: 0.75em;
+}
+
 .home-selfie-desc h1{
     text-align: center;
     line-height: 0.8em;
     font-size: 1.5em;
-    color:rgb(61, 134, 182);
+    color:var(--content-blue);
 }
 
 .home-selfie-desc p{
     font-size: 0.75em;
+    color: gray;
 }
 
 .home-content-container{
@@ -140,7 +150,7 @@ header ul li a:hover{
 .home-content-container h1{
     text-align: center;
     line-height: 0.5em;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .home-content-intro{
@@ -157,10 +167,77 @@ header ul li a:hover{
     margin-top: 2em;
     line-height: 0.5em;
 }
+
 .home-content p{
     margin-left: 2.3em;
     margin-right: 2.3em;
     font-size: 1em;
+}
+
+.home-content.card {
+    display: flex;
+    flex-flow: wrap;
+    width: 90%;
+    margin-left: var(--page-margin);
+    margin-right: var(--page-margin);
+}
+
+
+.card.btn_shadow{
+
+    color: white;
+    border-radius: 0.5em;
+    background: var(--content-blue);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px var(--page-background), -4px -4px 8px var(--page-background);
+    transition: 0.2s;
+}
+
+.btn_shadow:hover{
+    background: var(--content-blue);
+    color: white;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+/* Card */
+.card h3{
+    margin-left: 0.75em;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5em;
+    width:100%;
+    height: fit-content;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    color: white;
+}
+
+.card-content{
+    background-color: #fff;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    width: 75%;
+    color:#000;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-content a{
+    width: 100%;
+    text-decoration: none;
+    color:gray;
+    font-weight: 600;
+}
+
+.date{
+    font-size: 0.85em;
+    color: grey;
+    width: 20%;
+    padding-right: 2em;
+    background-color: transparent;
 }
 
 .home-socialIcon{
@@ -168,8 +245,9 @@ header ul li a:hover{
     justify-content: center;
     align-content: center;
     margin-left: -4em;
-
+    margin-bottom: 0.8em;
 }
+
 .home-socialIcon.item{
     font-size: 0.8em;
     margin-left: 2em;
@@ -180,6 +258,7 @@ header ul li a:hover{
     transform: translateY(-2px);
     color: rgb(184, 151, 110);
 }
+
 
 
 @media only screen and (max-width: 640px) {
@@ -254,12 +333,18 @@ header ul li a:hover{
     }
     .home-selfie{
         text-align: center;
-
     }
     
     .home-selfie img{
         width: 8em;
         border-radius:0.5em;
+    }
+
+    .home-selfie-desc.email{
+        display: inline-flex;
+        justify-content: center;
+        align-items: baseline;
+        width:100%;
     }
 
     .home-selfie-desc{
@@ -274,11 +359,12 @@ header ul li a:hover{
     }
 
     .home-selfie-desc p{
-        line-height: 0;
+        line-height: 0.8em;
         margin-left: 0.4em;
         font-size: 0.7em;
         color: gray;
     }
+
 
     .home-content-container h1{
         text-align: center;
@@ -291,11 +377,11 @@ header ul li a:hover{
         justify-content: center;
         align-content: center;
         margin-left: 0em;
-    
     }
+
     .home-socialIcon.item{
         font-size: 0.7em;
-        margin-left: 0.8em;
+        margin-left: 1.4em;
         color:black;
     }
 
@@ -308,7 +394,8 @@ header ul li a:hover{
     }
 
     .home-content-intro h1{
-        font-size: 2em;
+        margin-left: 0.5em;
+        font-size: 1.8em;
     }
 
     .home-content h1{
@@ -317,14 +404,54 @@ header ul li a:hover{
         margin-top: 2em;
         line-height: 0.5em;
     }
+    
     .home-content p{
         margin-left: 2.3em;
         margin-right: 2.3em;
+        line-height: 1.5em;
+        font-size: 0.9em;
+    }
+
+    .card h3{
+        margin-left: 0.75em;
         font-size: 1em;
     }
 
+    .card {
+        display: block;
+        text-align: start;
+        border-radius: 0.5em;
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+        color: white;
+    }
 
-    
-    
+    .card-content{
+        display: block;
+        background-color: #fff;
+        border-bottom-right-radius: 0.5em;
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+        width: 100%;
+        color:#000;
+        height: fit-content;
+    }
+
+    .card-content p{
+        font-size: 0.8em;
+        padding-top: 1em;
+        margin-left: 0.75em;
+        display: block;
+        width: 100%;
+    }
+
+    .card-content.date{
+        margin-left: 0.75em;
+        font-size: 0.7em;
+        display: inline-block;
+        background-color: transparent;
+    }
 }
 
