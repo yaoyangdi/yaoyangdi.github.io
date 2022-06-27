@@ -1,0 +1,194 @@
+
+@media only screen and (max-width: 640px) {
+    /* Header */
+    header {
+    height: 4em;
+    }
+    header ul {
+        display: none;
+    }
+
+    /* sidebar menu icon */
+    .nav-sidebar-icon{
+        width:2.7em;
+        height:3em;
+        margin-left: 10%;
+        background: transparent;
+        z-index:9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-sidebar-icon::before{
+        content:'';
+        width:50%;
+        height: 0.19em;
+        background:rgb(86, 162, 212);
+        transform: translateY(-0.2em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon:hover::before{
+        content:'';
+        width:50%;
+        height: 0.19em;
+        background:rgb(2, 2, 2);
+        transform: translateY(-0.2em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon::after{
+        content:'';
+        margin-left: -50%;
+        width:50%;
+        height: 0.19em;
+        background:rgb(86, 162, 212);
+        transform: translateY(0.4em);
+        transition: 0.4s;
+    }
+    
+    .nav-sidebar-icon:hover::after{
+        content:'';
+        margin-left: -50%;
+        width:50%;
+        height: 0.19em;
+        background:rgb(2, 2, 2);
+        transform: translateY(0.4em);
+        transition: 0.4s;
+    }
+
+    .nav-sidebar-icon.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .nav-sidebar-icon.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    
+    /* Home page */
+    .home.container{
+        display: inline-block;
+    }
+    .home-selfie{
+        /* make img central aligned */
+        text-align: center;  
+    }
+    
+    .home-selfie img{
+        width: 8em;
+        border-radius:0.5em;
+    }
+
+    /* content below img */
+    .home-selfie-desc.email{
+        display: inline-flex;
+        justify-content: center;
+        align-items: baseline;
+        width:100%;
+    }
+
+    .home-selfie-desc{
+        width:100%;
+    }
+
+    .home-selfie-desc h1{
+        text-align: center;
+        line-height: 0.8em;
+        font-size: 1.8em;
+        color:rgb(61, 134, 182);
+    }
+
+    .home-selfie-desc p{
+        line-height: 0.8em;
+        font-size: 0.7em;
+        color: gray;
+    }
+
+    .home-socialIcon{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: 0em;
+    }
+
+    .home-socialIcon.item{
+        font-size: 0.7em;
+        margin-left: 1.4em;
+        color:black;
+    }
+    
+    .home-content.container h1{
+        text-align: center;
+        line-height: 1em;
+        font-size: 1.8em;
+    }
+
+    .home-content-intro{
+        margin-top: 2em;
+        line-height: 1.7em;
+        text-align: start;
+    }
+
+    .home-content-intro h1{
+        margin-left: 0.5em;
+        font-size: 1.8em;
+    }
+
+    .home-content h1{
+        text-align: start;
+        font-size: 1.5em;
+        margin-top: 1.5em;
+        line-height: 0.5em;
+    }
+    
+    .home-content p{
+        margin-left: 2.3em;
+        margin-right: 2.3em;
+        line-height: 1.7em;
+        font-size: 1em;
+    }
+
+    .card h3{
+        margin-left: 0.75em;
+        font-size: 1em;
+    }
+
+    .card {
+        display: block;
+        text-align: start;
+        border-radius: 0.5em;
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 2em;
+        margin-top: 0.5em;
+        color: white;
+    }
+
+    .card-content{
+        display: block;
+        background-color: #fff;
+        border-bottom-right-radius: 0.5em;
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+        width: 100%;
+        color:#000;
+        height: fit-content;
+    }
+
+    .card-content p{
+        font-size: 0.8em;
+        padding-top: 1em;
+        margin-left: 0.75em;
+        display: block;
+        width: 100%;
+    }
+
+    .card-content.date{
+        margin-left: 0.75em;
+        font-size: 0.7em;
+        display: inline-block;
+        background-color: transparent;
+    }
+}
+

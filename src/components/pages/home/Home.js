@@ -13,7 +13,7 @@ import {
 
 const Home = () => {
   return (
-      <div className='home-container'>
+      <div className='home container'>
         <div className='home-selfie'>
           <img src= {selfie} />
           <div className='home-selfie-desc'>
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='home-content-container'>
+        <div className='home-content container'>
           
           <div className='home-content-intro'>
             <h1>G'day, I'm Steven! 👋</h1>
@@ -48,27 +48,27 @@ const Home = () => {
                   <FontAwesomeIcon icon={faLinkedin} size="2x"/>
                 </a>
             </div>
+            <p>
             🔘 A coder.<br/>
             🔘 A final year undergraduate student with A love for software and new technologies.<br/>
             🔘 A self-motivated learner that is always willing to explore solutions toward real life challenges.<br/>
             🔘 I firmly believe that tech must be inclusive, accessible and diverse and I considered building my own sharing website for this reason.<br/>
+            </p>
           </div>
           <div className='home-content'>
-            <h1>From the Blog</h1>
+            <h2>From the Blog</h2>
             <p>
               I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way :D
             </p>
-            <h1>Latest Reviews</h1>
+            <h2>Latest Reviews</h2>
             <div className='home-content card'>
               {data.map((val, index) => {
                 return (
-                          <Card key={index}  title={val.title} desc={val.desc} date={val.date} />
-)
+                          <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
+                )
               })}
             </div>
           </div>
-
-          
         </div>
 
 

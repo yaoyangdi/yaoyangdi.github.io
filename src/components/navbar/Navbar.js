@@ -53,10 +53,10 @@ const Navbar = () => {
 
     return (
       <Fragment >
-          <div className="container">
+          <div>
             <header  ref={ref2}>
                 {/* Sidebar Menu Icon */}
-                <Link to='#' className='menu-icon' onClick = {onToogle}>
+                <Link to='#' onClick = {onToogle}>
                     <div className={toogle ? 'nav-sidebar-icon active' : 'nav-sidebar-icon' }></div>
                 </Link>
 
