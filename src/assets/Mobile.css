@@ -212,12 +212,15 @@
     }
     .blogOverview.container.p{
         margin-left: 0em;
-    
         margin-top: 0em;
     }
 
+    .blogOverview.container p{
+        margin-left: 1em;
+    }
+
     .blog.timeline{
-        margin-left: 0em;
+        margin-left: -0.5em;
         margin-right: -1em;
     }
     .blog.date{
