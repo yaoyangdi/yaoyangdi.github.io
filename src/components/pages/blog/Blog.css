@@ -1,0 +1,115 @@
+@media only screen and (min-width: 740px) {
+    .blog.date{
+        padding-bottom: 3%;
+    }
+    .blog.date.left{
+        text-align: end;
+        float: right;
+        margin-right: -2em;
+        padding-bottom: 3%;
+    }
+    .blog.date.singleSide{
+        margin-left: 5%;
+    }
+
+    .blog.timeline.bothSide::before{
+        content: '';
+        position: absolute;
+        height: 150vh;
+        width: 2px;
+        left: 50%;
+        margin-left: 1.2em;
+        background-color: grey;
+    }
+    .blog.timeline.singleSide::before{
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 2px;
+        margin-left: 0.4em;
+        margin-top: 1em;
+        background-color: grey;
+    }
+
+    .blog.timeline ul li{
+        position: relative;
+        list-style: none;
+        margin-top: -0.2em;
+    }
+
+
+    .blog.group{
+        margin-top: 3em;
+    }
+    
+    /* Single side card */
+    .blog.timeline.card.singleSide{
+        margin-bottom: -0.5em;
+        width: 90%;
+    }
+    .blog.timeline.card.singleSide:first-child::after{
+        content: '';
+        position:absolute;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        border-style: solid;
+        border-color: var(--content-blue);
+        background-color: var(--page-background);
+        top:5%;   /* the margin on top */
+    }
+    .blog.timeline.card.singleSide:hover::after
+    {
+        background-color: var(--content-blue);
+        transition: 0.6s;
+    }
+
+    /* Left && Right side card */
+    .blog.timeline.card.left{
+        display: block;
+        width: 50%;
+        transform: translateX(-5%);
+        clear:both;
+        float:left;
+        margin-bottom: -1.5em;
+    }
+    .blog.timeline.card.right{
+        display: block;
+        width: 50%;
+        transform: translateX(5%);
+        clear:both;
+        float:right;
+        margin-bottom: -1.5em;
+    }
+
+    .blog.timeline.card.left:first-child:after,
+    .blog.timeline.card.right:first-child:after{
+        content: '';
+        position:absolute;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        border-style: solid;
+        border-color: var(--content-blue);
+        background-color: var(--page-background);
+        top:5%;   /* the margin on top */
+    }
+
+    .blog.timeline.card.left:hover::after,
+    .blog.timeline.card.right:hover::after
+    {
+        background-color: var(--content-blue);
+        transition: 0.6s;
+    }
+    
+    .blog.timeline.card.left::after{
+        right: -5%;
+        transform: translate(50%, -50%);
+    }
+
+    .blog.timeline.card.right::after{
+        left:-5%;
+        transform: translate(-50%, -50%);
+    }
+
+}

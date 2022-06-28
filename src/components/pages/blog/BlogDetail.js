@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
+import './Blog.css'
 
 const BlogDetail = ({props}) => {
   const [content, setContent] = useState(null);

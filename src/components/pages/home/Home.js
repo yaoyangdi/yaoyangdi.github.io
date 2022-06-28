@@ -10,6 +10,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { sortByDate } from '../../../helpers';
 
 const Home = () => {
   return (
@@ -63,7 +64,7 @@ const Home = () => {
             </p>
             <h2>Latest Reviews</h2>
             <div className='home-content card'>
-              {data.map((val, index) => {
+              {sortByDate(data, false).slice(0,3).map((val, index) => {
                 return (
                         <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
                 )
