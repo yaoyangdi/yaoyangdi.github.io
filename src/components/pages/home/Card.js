@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 const card = (props) => {
   return (
-      <div className='card btn_shadow'>
+      <div className='card shadow'>
         <h3 >{props.title}</h3>
        
           <div className='card-content'>
-              <Link to={'/reviews'}>
+              <Link to={props.link}>
                  <p>{props.desc}</p>
               </Link>
-              <div className='card-content date'>
+              <div className={props.hide ? 'card-content date hide' : 'card-content date'}>
                 <p>{props.date}</p>
               </div>
               

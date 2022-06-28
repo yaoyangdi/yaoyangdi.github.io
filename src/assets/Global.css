@@ -1,18 +1,41 @@
 :root{
     --page-background: rgb(240, 242, 242);
-    --page-margin: 2.3em;
-    --page-margin-mobile: 1em;
+    --page-margin: 2.1em;
+    --page-margin-mobile: 1.5em;
+    --content-blue:rgb(61, 134, 182);
+
 }
 
 /* Page container */
 .container{
-    padding-left: var(--page-margin);
-    padding-right: var(--page-margin);
+    margin-left:var(--page-margin);
+    margin-right: var(--page-margin);
 }
 
-@media only screen and (max-width: 640px) {
-    .container{
-        padding-left: 0em;
-        padding-right: 0em;
-    }
+.shadow{
+    color: white;
+    border-radius: 0.5em;
+    background: var(--content-blue);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px var(--page-background), -4px -4px 8px var(--page-background);
+    transition: 0.2s;
 }
+
+.shadow:hover{
+    background: var(--content-blue);
+    color: white;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+.date{
+    font-size: 0.85em;
+    color: grey;
+    width: 20%;
+    padding-right: 2em;
+    background-color: transparent;
+}
+
+.hide{
+    display: none;
+}
+

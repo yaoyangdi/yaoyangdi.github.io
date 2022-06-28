@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='home-content container'>
+        <div className='home-content-container'>
           
           <div className='home-content-intro'>
             <h1>G'day, I'm Steven! 👋</h1>
@@ -47,6 +47,7 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/yaoyang-ding-bba6511ab/" className='home-socialIcon item'>
                   <FontAwesomeIcon icon={faLinkedin} size="2x"/>
                 </a>
+
             </div>
             <p>
             🔘 A coder.<br/>
@@ -64,7 +65,7 @@ const Home = () => {
             <div className='home-content card'>
               {data.map((val, index) => {
                 return (
-                          <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
+                        <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
                 )
               })}
             </div>
