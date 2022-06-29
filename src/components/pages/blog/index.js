@@ -12,7 +12,7 @@ export const Blog = () => {
     <Routes>
           <Route path="" element={<BlogOverview/>}/>
           {data && data.map((route, index) => {
-            return (<Route path={`/${route.fileName}`} element={<BlogDetail fileName={route.fileName}/> }/>)
+            return (<Route path={`/${route.fileName}`} element={<BlogDetail fileName={route.fileName}  title={route.title} date={route.date} />}/>)
           
           })
           }

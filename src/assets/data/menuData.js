@@ -7,12 +7,12 @@ export const menuData = [
         title: 'Reviews',
         path: '/reviews',
     },
-    {
-        title: 'Projects',
-        path: '/projects',
-    },
-    {
-        title: 'About',
-        path: '/about',
-    }
+    // {
+    //     title: 'Projects',
+    //     path: '/projects',
+    // },
+    // {
+    //     title: 'About',
+    //     path: '/about',
+    // }
 ]

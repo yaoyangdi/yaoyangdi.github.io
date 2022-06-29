@@ -232,8 +232,37 @@ header ul li a:hover{
 }
 
 /* Blog Detail */
-.blogDetail {
-    text-align: center;
+.blogDetail.container {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    text-align: start;
+    overflow-wrap: break-word;
     /* justify-content: center;
     align-items: center; */
+}
+.blogDetail.metadata{
+
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    /* background-color: var(--content-blue); */
+}
+
+.blogDetail.metadata h1{
+    color: var(--content-blue);
+    text-align: center;
+    font-size: var(--title);
+}
+.blogDetail.metadata p{
+    text-align: center;
+    color: grey;
+    font-size: 1em;
+    margin-top: -1em;
+    line-height: 0.5em;
+}
+.blogDetail.image{
+    text-align: center;
+}
+
+.blogDetail.image img{
+    width: 27em;
 }

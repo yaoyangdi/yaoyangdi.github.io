@@ -1,12 +1,11 @@
 import React,{useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
 
-const BlogDetail = ({props}) => {
-
+const BlogDetail = (props) => {
   const [content, setContent] = useState(null);
-  const [src, setSrc] = useState(null);
+
   useEffect(() => {
-    fetch(require("./markdown/hey.md"))
+    fetch(require(`./markdown/${props.fileName}.md`))
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
@@ -22,19 +21,21 @@ const BlogDetail = ({props}) => {
   
   
   return (
-    <div className="blogDetail">
+    <div className="blogDetail container">
+      <div className='blogDetail metadata'>
+        <h1>{props.title}</h1>
+        <p>{ `POST ON: ${props.date}`}</p>
+      </div>
+
+
       <ReactMarkdown children={content} components={{
         p: ({ node, children }) => {
           if (node.children[0].tagName === "img") {
               const image = node.children[0].properties;
-              setSrc(image.src)
-              console.log(src);
+
               return (
-                  <div className="image">
-                    <img src={require(`./markdown/${image.src}`)} 
-                         width='600'/>
-                         
-                    {/* +String(image.src) */}
+                  <div className="blogDetail image">
+                    <img src={require(`./markdown/${image.src}`)} />                         
                   </div>
 
               );
