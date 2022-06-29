@@ -39,10 +39,14 @@
 
 
     .blog.group{
-        margin-top: 3em;
+        margin-top: 2em;
     }
     
     /* Single side card */
+    .blog.timeline.card.singleSide:first-child{
+        padding-top: 0.5em;
+    }
+
     .blog.timeline.card.singleSide{
         margin-bottom: -0.5em;
         width: 90%;

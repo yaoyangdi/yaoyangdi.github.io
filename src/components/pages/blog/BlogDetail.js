@@ -1,15 +1,25 @@
 import React,{useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
-import './Blog.css'
 
 const BlogDetail = ({props}) => {
+
   const [content, setContent] = useState(null);
   const [src, setSrc] = useState(null);
   useEffect(() => {
-    fetch(require(`../../../assets/markdown/This is my first blog.md`))
+    fetch(require("./markdown/hey.md"))
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
+
+  // function to import all images at run time so that dynamically importinng image using require is wokring  
+  // since require is executed at compile time, not at runtime
+  function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  importAll(require.context('./markdown/images', false, /\.(png|jpe?g|svg)$/));
+  
   
   return (
     <div className="blogDetail">
@@ -19,18 +29,12 @@ const BlogDetail = ({props}) => {
               const image = node.children[0].properties;
               setSrc(image.src)
               console.log(src);
-              let Img = require("../../../"+String(src))
-
               return (
                   <div className="image">
-                      <img
-                          src={Img}
-                          width="600"
-
-                          layout="responsive"
-                      />
-
-                      <h2>2222222</h2>
+                    <img src={require(`./markdown/${image.src}`)} 
+                         width='600'/>
+                         
+                    {/* +String(image.src) */}
                   </div>
 
               );
