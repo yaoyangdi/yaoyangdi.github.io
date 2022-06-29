@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4cb6c3e3.css",
-    "main.js": "/static/js/main.a524a893.js",
+    "main.css": "/static/css/main.b69ebb3e.css",
+    "main.js": "/static/js/main.a36b1df8.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
-    "static/media/jpg": "/static/media/241fb227d85ceef35862e7beb711522.fa22ad3f8b16fa76b897.jpg",
+    "static/media/jpg": "/static/media/a9843f4f7b19d0b6421f5ca1397caee.4f2ca76c877a44dcea79.jpg",
     "static/media/fliderStation.jpg": "/static/media/fliderStation.0aab89397a799f284418.jpg",
     "static/media/selfie.jpg": "/static/media/selfie.65c59a887494458e58c0.jpg",
     "index.html": "/index.html",
-    "static/media/hey.md": "/static/media/hey.dec751e8b108538c590a.md",
+    "static/media/my-second-blog.md": "/static/media/my-second-blog.430d9ff06a6abd658cc4.md",
+    "static/media/redis-vs-mysql.md": "/static/media/redis-vs-mysql.652e3987e54af77974be.md",
     "static/media/aaaa.md": "/static/media/aaaa.7ba56f4d84e8d2dbfdb2.md",
-    "main.4cb6c3e3.css.map": "/static/css/main.4cb6c3e3.css.map",
-    "main.a524a893.js.map": "/static/js/main.a524a893.js.map",
+    "main.b69ebb3e.css.map": "/static/css/main.b69ebb3e.css.map",
+    "main.a36b1df8.js.map": "/static/js/main.a36b1df8.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb6c3e3.css",
-    "static/js/main.a524a893.js"
+    "static/css/main.b69ebb3e.css",
+    "static/js/main.a36b1df8.js"
   ]
 }
