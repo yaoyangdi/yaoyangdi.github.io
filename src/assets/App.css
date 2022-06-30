@@ -17,6 +17,7 @@
 
 body{
     background-color: rgb(240, 242, 242);
+
 }
 
 /* 
@@ -219,14 +220,13 @@ header ul li a:hover{
 
 
 /* Blog Overview */
-
 .blogOverview.container h1{
     margin-left: 1em;
     font-size: var(--title);
     line-height: 1em;
 }
 
-.blogOverview.container p{
+.blogOverview.container.p{
     margin-left: 2.5em;
     margin-top: -0.75em;
 }

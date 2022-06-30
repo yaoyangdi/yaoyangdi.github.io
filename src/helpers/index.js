@@ -4,7 +4,7 @@
 
 // Function to group elements of BlogData array with same date property into an inner array 
 export const groupByDate = (arr) =>{
-    let sorted_arr = sortByDate(arr, true);
+    let sorted_arr = sortByDate(arr, false);
     let grouped = sorted_arr.reduce((r,v, i, a) => {
       r = i===1 ? [[r]] : r;
       if(v.date===a[i-1].date){

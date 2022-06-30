@@ -21,10 +21,11 @@
         margin-left: 1.2em;
         background-color: grey;
     }
+
     .blog.timeline.singleSide::before{
         content: '';
         position: absolute;
-        height: 100vh;
+        min-height: 100%;
         width: 2px;
         margin-left: 0.4em;
         margin-top: 1em;
