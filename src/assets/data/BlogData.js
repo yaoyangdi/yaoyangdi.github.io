@@ -14,8 +14,20 @@ const data = [
         date: "30 JUN, 2022",
         desc: "This is my second testing blog!",
     },
-
-
+    {
+        id: 3,
+        fileName: "program-vs-application",
+        title: "Program vs. Application",
+        date: "6 JULY, 2022",
+        desc: "",
+    },
+    {
+        id: 4,
+        fileName: "springboot-hibernate-mysql-configuration",
+        title: "Springboot Hibernate MySQL Configuration",
+        date: "7 JULY, 2022",
+        desc: "configuration on integrating Springboot with Hibernate framework",
+    },
 ];
 
 export default data

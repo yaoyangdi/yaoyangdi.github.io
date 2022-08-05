@@ -21,6 +21,13 @@ export const groupByDate = (arr) =>{
 
 // Function to sort the BlogData array by its element's property 'date' in given order( true: descending / false: ascending)
 export const sortByDate = (arr, order) => {
-return order ? arr.sort((a,b)=> a.date.split(" ")[0] - b.date.split(" ")[0])
+return order ? arr.sort((a,b)=> Date(a.date) - b.date.split(" ")[0])
              : arr.sort((a,b)=> b.date.split(" ")[0] - a.date.split(" ")[0]);
+}
+
+export const dateFormater = (date) => {
+  let options = {
+    year: 'numeric', month: 'short', day: 'numeric',
+  };
+  return (new Intl.DateTimeFormat('en-US', options).format(date));
 }
