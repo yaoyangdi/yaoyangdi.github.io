@@ -18,7 +18,7 @@ const data = [
         id: 3,
         fileName: "program-vs-application",
         title: "Random Notes",
-        date: "7 JUL 2022",
+        date: "6 JUL 2022",
         desc: "Random notes along with spring boot learning",
     },
     {
@@ -27,6 +27,13 @@ const data = [
         title: "Springboot Hibernate MySQL Configuration",
         date: "7 JUL 2022",
         desc: "Configuration on integrating Springboot with Hibernate framework",
+    },
+    {
+        id: 5,
+        fileName: "Java-basic",
+        title: "Java Basic",
+        date: "22 JUL 2022",
+        desc: "basic java notes",
     },
 ];
 

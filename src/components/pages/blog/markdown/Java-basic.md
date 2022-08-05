@@ -20,9 +20,9 @@ Java-basic
 
 ## Files
 
-- **resources/static** - contains <u>static resources</u> such as css, js and images.
-- **resources/templates** - contains server-side templates which are <u>rendered</u> by Spring. *(HTML template)*
-- **resources/application.properties** - This file is very important. It contains **<u>application-wide</u>** properties. Spring reads the properties defined in this file to configure your application.  **e.g.** You can define server’s default port, server’s context path, database URLs etc, in this file.
+- **resources/static** - `contains` ***static resources*** such as css, js and images.
+- **resources/templates** - contains server-side templates which are rendered by Spring. *(HTML template)*
+- **resources/application.properties** - This file is very important. It contains **application-wide** properties. Spring reads the properties defined in this file to configure your application.  **e.g.** You can define server’s default port, server’s context path, database URLs etc, in this file.
 - **DemoApplicationTests** - Define unit and integration tests here.
 
 - **pom.xml** - contains all the project dependencies.

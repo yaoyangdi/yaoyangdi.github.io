@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import { gruvboxDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const BlogDetail = (props) => {
   const [content, setContent] = useState(null);
@@ -21,6 +21,7 @@ const BlogDetail = (props) => {
   }
   importAll(require.context('./markdown/images', false, /\.(png|jpe?g|svg)$/));
 
+
   
   return (
     <div className="blogDetail container">
@@ -31,18 +32,21 @@ const BlogDetail = (props) => {
 
 
       <ReactMarkdown children={content} components={{
+        a({children, href,...props}) {
+          return (<a href={href} style={{color: "gray", fontWeight: 600}} {...props}>{children}</a>)
+        },
         code({node, inline, className, children, ...props}) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
             <SyntaxHighlighter
               children={String(children).replace(/\n$/, '')}
-              style={gruvboxDark}
+              style={oneDark}
               language={match[1]}
               PreTag="div"
               {...props}
             />
           ) : (
-            <code className={className} {...props}>
+            <code className={className} style={{backgroundColor:"rgb(210, 210, 210)", borderRadius: "3px", fontFamily:`"Lucida Console", "Courier New", monospace`, padding: "4px"}} {...props}>
               {children}
             </code>
           )
@@ -59,7 +63,7 @@ const BlogDetail = (props) => {
               );
           }
           // Return default child if it's not an image
-          return <p>{children}</p>;
+          return <p style={{lineHeight: "25px"}}>{children}</p>;
       },
       }}
       escapeHtml={false}
