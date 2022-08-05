@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import data from '../../../assets/data/BlogData'
 import Card from '../home/Card'
-import {groupByDate, dateFormater} from '../../../helpers/index'
+import {groupByDate} from '../../../helpers/index'
 
 
 const BlogOverview = () => {
 
   var flip = false;
   const grouped_list = groupByDate(data);
+  console.log(grouped_list)
   const singleSide = grouped_list.length <=3;
 
   return (
