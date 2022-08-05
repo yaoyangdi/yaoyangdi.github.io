@@ -1,21 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.a5dbabf8.css",
-    "main.js": "/static/js/main.4f6eb95c.js",
+    "main.js": "/static/js/main.766ca178.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
     "static/media/jpg": "/static/media/a9843f4f7b19d0b6421f5ca1397caee.4f2ca76c877a44dcea79.jpg",
     "static/media/fliderStation.jpg": "/static/media/fliderStation.0aab89397a799f284418.jpg",
     "static/media/selfie.jpg": "/static/media/selfie.65c59a887494458e58c0.jpg",
+    "static/media/image-png": "/static/media/image-20220731234630606.a7dac226cb87c15e325f.png",
+    "static/media/springboot-hibernate-mysql-configuration.md": "/static/media/springboot-hibernate-mysql-configuration.92eedb032d83cce678af.md",
+    "static/media/Java-basic.md": "/static/media/Java-basic.1c1d33cb143b7f6fe63f.md",
+    "static/media/deploying-mysql-on-kubernates.md": "/static/media/deploying-mysql-on-kubernates.ed7ffd190215389bec77.md",
+    "static/media/flash-sale-system.md": "/static/media/flash-sale-system.e3c064ed737015b65068.md",
     "index.html": "/index.html",
     "static/media/program-vs-application.md": "/static/media/program-vs-application.83f67fdf122f1a15fb54.md",
     "static/media/my-second-blog.md": "/static/media/my-second-blog.430d9ff06a6abd658cc4.md",
     "static/media/redis-vs-mysql.md": "/static/media/redis-vs-mysql.652e3987e54af77974be.md",
     "main.a5dbabf8.css.map": "/static/css/main.a5dbabf8.css.map",
-    "main.4f6eb95c.js.map": "/static/js/main.4f6eb95c.js.map",
+    "main.766ca178.js.map": "/static/js/main.766ca178.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5dbabf8.css",
-    "static/js/main.4f6eb95c.js"
+    "static/js/main.766ca178.js"
   ]
 }
