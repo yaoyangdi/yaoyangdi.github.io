@@ -3,11 +3,11 @@
  */
 
 // Function to group elements of BlogData array with same date property into an inner array 
-export const groupByDate = (arr) =>{
+export const groupByMonth = (arr) =>{
     let sorted_arr = sortByDate(arr, false);
     let grouped = sorted_arr.reduce((r,v, i, a) => {
       r = i===1 ? [[r]] : r;
-      if(v.date===a[i-1].date){
+      if(v.date.split(" ")[1]===a[i-1].date.split(" ")[1]){
         r[r.length-1] = r[r.length-1] || []
         r[r.length-1].push(v)
       }else{
@@ -17,7 +17,7 @@ export const groupByDate = (arr) =>{
     });
     return grouped
   }
-  
+
 
 // Function to sort the BlogData array by its element's property 'date' in given order( true: descending / false: ascending)
 export const sortByDate = (arr, order) => {

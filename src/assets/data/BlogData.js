@@ -18,7 +18,7 @@ const data = [
         id: 3,
         fileName: "program-vs-application",
         title: "Random Notes",
-        date: "6 JUL 2022",
+        date: "7 JUL 2022",
         desc: "Random notes along with spring boot learning",
     },
     {
