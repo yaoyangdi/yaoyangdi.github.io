@@ -14,7 +14,7 @@ import './assets/Mobile.css'
 const App = () => {
   return (
     <>
-      <Router basename="/yaoyangdi.github.io">
+      <Router>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>

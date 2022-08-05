@@ -1,5 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import ReactMarkdown from "react-markdown";
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { gruvboxDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const BlogDetail = (props) => {
   const [content, setContent] = useState(null);
@@ -18,7 +20,7 @@ const BlogDetail = (props) => {
     return images;
   }
   importAll(require.context('./markdown/images', false, /\.(png|jpe?g|svg)$/));
-  
+
   
   return (
     <div className="blogDetail container">
@@ -29,6 +31,22 @@ const BlogDetail = (props) => {
 
 
       <ReactMarkdown children={content} components={{
+        code({node, inline, className, children, ...props}) {
+          const match = /language-(\w+)/.exec(className || '')
+          return !inline && match ? (
+            <SyntaxHighlighter
+              children={String(children).replace(/\n$/, '')}
+              style={gruvboxDark}
+              language={match[1]}
+              PreTag="div"
+              {...props}
+            />
+          ) : (
+            <code className={className} {...props}>
+              {children}
+            </code>
+          )
+        },
         p: ({ node, children }) => {
           if (node.children[0].tagName === "img") {
               const image = node.children[0].properties;
