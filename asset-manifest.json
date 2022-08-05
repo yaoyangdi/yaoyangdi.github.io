@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5dbabf8.css",
-    "main.js": "/static/js/main.766ca178.js",
+    "main.css": "/static/css/main.8ba79fe9.css",
+    "main.js": "/static/js/main.baa0bf53.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
     "static/media/jpg": "/static/media/a9843f4f7b19d0b6421f5ca1397caee.4f2ca76c877a44dcea79.jpg",
     "static/media/fliderStation.jpg": "/static/media/fliderStation.0aab89397a799f284418.jpg",
@@ -15,12 +15,12 @@
     "static/media/program-vs-application.md": "/static/media/program-vs-application.83f67fdf122f1a15fb54.md",
     "static/media/my-second-blog.md": "/static/media/my-second-blog.430d9ff06a6abd658cc4.md",
     "static/media/redis-vs-mysql.md": "/static/media/redis-vs-mysql.652e3987e54af77974be.md",
-    "main.a5dbabf8.css.map": "/static/css/main.a5dbabf8.css.map",
-    "main.766ca178.js.map": "/static/js/main.766ca178.js.map",
+    "main.8ba79fe9.css.map": "/static/css/main.8ba79fe9.css.map",
+    "main.baa0bf53.js.map": "/static/js/main.baa0bf53.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5dbabf8.css",
-    "static/js/main.766ca178.js"
+    "static/css/main.8ba79fe9.css",
+    "static/js/main.baa0bf53.js"
   ]
 }
