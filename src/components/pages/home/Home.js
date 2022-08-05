@@ -64,7 +64,7 @@ const Home = () => {
             </p>
             <h2>Latest Reviews</h2>
             <div className='home-content card'>
-              {sortByDate(data, false).slice(0,3).map((val, index) => {
+              {sortByDate(data, false).slice(0,4).map((val, index) => {
                 return (
                         <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
                 )
