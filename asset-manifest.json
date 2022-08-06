@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ba79fe9.css",
-    "main.js": "/static/js/main.ba81576c.js",
+    "main.js": "/static/js/main.df55265d.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
     "static/media/jpg": "/static/media/a9843f4f7b19d0b6421f5ca1397caee.4f2ca76c877a44dcea79.jpg",
     "static/media/fliderStation.jpg": "/static/media/fliderStation.0aab89397a799f284418.jpg",
@@ -11,16 +11,16 @@
     "static/media/Java-basic.md": "/static/media/Java-basic.3afe60bfee1b90588c7f.md",
     "static/media/deploying-mysql-on-kubernates.md": "/static/media/deploying-mysql-on-kubernates.ed7ffd190215389bec77.md",
     "static/media/flash-sale-system.md": "/static/media/flash-sale-system.e3c064ed737015b65068.md",
+    "static/media/my-second-blog.md": "/static/media/my-second-blog.85c526070b97a2dc5aae.md",
     "index.html": "/index.html",
-    "static/media/my-second-blog.md": "/static/media/my-second-blog.6d04f099b489f84b3d0a.md",
     "static/media/program-vs-application.md": "/static/media/program-vs-application.83f67fdf122f1a15fb54.md",
     "static/media/redis-vs-mysql.md": "/static/media/redis-vs-mysql.652e3987e54af77974be.md",
     "main.8ba79fe9.css.map": "/static/css/main.8ba79fe9.css.map",
-    "main.ba81576c.js.map": "/static/js/main.ba81576c.js.map",
+    "main.df55265d.js.map": "/static/js/main.df55265d.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ba79fe9.css",
-    "static/js/main.ba81576c.js"
+    "static/js/main.df55265d.js"
   ]
 }
