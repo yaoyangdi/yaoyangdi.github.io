@@ -14,7 +14,7 @@ import './assets/Mobile.css'
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename='/'>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
