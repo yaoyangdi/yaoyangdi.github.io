@@ -35,6 +35,13 @@ const data = [
         date: "22 JUL 2022",
         desc: "basic java notes",
     },
+    {
+        id: 6,
+        fileName: "java-error-solution-set",
+        title: "Java Error solution set",
+        date: "8 AUG 2022",
+        desc: "Record the bugs I encountered in java learning and how to solve them",
+    },
 ];
 
 export default data

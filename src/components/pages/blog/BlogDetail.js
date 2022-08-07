@@ -46,7 +46,7 @@ const BlogDetail = (props) => {
               {...props}
             />
           ) : (
-            <code className={className} style={{backgroundColor:"rgb(210, 210, 210)", borderRadius: "3px", fontFamily:`"Lucida Console", "Courier New", monospace`, padding: "4px"}} {...props}>
+            <code className={className} style={{color:"rgb(100, 100, 100)", backgroundColor:"rgb(215, 215, 215)", borderRadius: "3px", fontFamily:`"Lucida Console", "Courier New", monospace`, padding: "4px"}} {...props}>
               {children}
             </code>
           )
