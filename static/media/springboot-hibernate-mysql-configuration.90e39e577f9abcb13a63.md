@@ -88,7 +88,3 @@ while the @OneToMany and @ManyToMany relationships are considered LAZY.
 
 
 
-
-
-new raffle
-
