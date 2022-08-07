@@ -10,7 +10,7 @@ const data = [
     {
         id: 2,
         fileName: "my-second-blog",
-        title: "My Second Blog",
+        title: "Cheers!",
         date: "30 JUN 2022",
         desc: "This is my second testing blog!",
     },
@@ -39,6 +39,13 @@ const data = [
         id: 6,
         fileName: "java-error-solution-set",
         title: "Java Error solution set",
+        date: "7 AUG 2022",
+        desc: "Record the bugs I encountered in java learning and how to solve them",
+    },
+    {
+        id: 7,
+        fileName: "how-to-set-up-authentication-token-in-java",
+        title: "How to set up authentication tokens in java",
         date: "8 AUG 2022",
         desc: "Record the bugs I encountered in java learning and how to solve them",
     },

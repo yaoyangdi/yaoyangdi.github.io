@@ -2,7 +2,7 @@
 
 Definition:
 
-One typical scenario of flash sale system can be the activities with limited time to encourage customers to make a impulse buys in order to make their best budget of the season/year. E.g. Brand XXX discounted its products by 60% within one days.
+xxxxxxxxxx apiVersion: v1kind: PersistentVolume            # Create a PersistentVolumemetadata:  name: mysql-pv  labels:    type: localspec:  storageClassName: standard      # Storage class. A PV Claim requesting the same storageClass can be bound to this volume.   capacity:   storage: 250Mi  accessModes:    - ReadWriteOnce  hostPath:                       # hostPath PersistentVolume is used for development and testing. It uses a file/directory on the Node to emulate network-attached storage    path: "/mnt/data"  persistentVolumeReclaimPolicy: Retain  # Retain the PersistentVolume even after PersistentVolumeClaim is deleted. The volume is considered “released”. But it is not yet available for another claim because the previous claimant’s data remains on the volume. type: post​---    ​apiVersion: v1kind: PersistentVolumeClaim        # Create a PersistentVolumeClaim to request a PersistentVolume storagemetadata:                          # Claim name and labels  name: mysql-pv-claim  labels:    app: polling-appspec:                              # Access mode and resource limits  storageClassName: standard       # Request a certain storage class  accessModes:    - ReadWriteOnce                # ReadWriteOnce means the volume can be mounted as read-write by a single Node  resources:    requests:      storage: 250Mitype: postyaml
 
 ## Scenario
 

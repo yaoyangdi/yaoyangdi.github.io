@@ -1,5 +1,3 @@
-# Cheers!
-
 True! it is working now! 
 
 I can now write the md file down via Typora and then react-markdown helps me to convert it and render to the component HAHAHA! 
