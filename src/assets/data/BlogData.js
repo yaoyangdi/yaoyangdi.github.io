@@ -47,7 +47,7 @@ const data = [
         fileName: "how-to-set-up-authentication-token-in-java",
         title: "How to set up authentication tokens in java",
         date: "8 AUG 2022",
-        desc: "Record the bugs I encountered in java learning and how to solve them",
+        desc: "Reviews along with the implemention of flash sales e-commerce application development process",
     },
 ];
 
