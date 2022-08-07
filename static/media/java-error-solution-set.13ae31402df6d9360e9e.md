@@ -10,6 +10,10 @@
 >
 > 
 
+------
+
+
+
 ## Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements
 
 `Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.example.flashsales.model.User.cart_product`
