@@ -27,4 +27,31 @@ So Swagger is the thing that I have found recently that is super easy and powerf
 
 4. We also build an documentation UI at http://localhost:8080/swagger-ui/
 
-![image-20220809012946773](images/image-20220809012946773.png)
+![image-20220809015717662](images/image-20220809015717662.png)
+
+
+
+### Remove Basic Error Controller
+
+As you can see from the picture above, there is a basic-error-controller, to remove it, I create a configure class,
+
+```java
+@Configuration
+public class SwaggerConfiguration {
+    @Bean
+    Docket docket() {
+        return new Docket(DocumentationType.OAS_30).useDefaultResponseMessages(false)
+                .produces(Stream.of("application/xml", "application/json").collect(Collectors.toSet())).select()
+                .paths(Predicate.not(PathSelectors.regex("/error.*"))).build()
+                .protocols(Stream.of("http", "https").collect(Collectors.toSet()));
+    }
+}
+```
+
+Note that I used **Predicate.not()** to exclude the error controller
+
+References
+
+ [https://stackoverflow.com/questions/32941917/remove-basic-error-controller-in-springfox-swaggerui]( https://stackoverflow.com/questions/32941917/remove-basic-error-controller-in-springfox-swaggerui)
+
+[https://stdworkflow.com/655/swagger3-0-springboot-eliminate-basic-error-controller](https://stdworkflow.com/655/swagger3-0-springboot-eliminate-basic-error-controller)
