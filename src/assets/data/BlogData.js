@@ -49,6 +49,13 @@ const data = [
         date: "8 AUG 2022",
         desc: "Reviews along with the implemention of flash sales e-commerce application development process",
     },
+    {
+        id: 8,
+        fileName: "use-swagger-in-spring-boot",
+        title: "Use Swagger in Spring Boot",
+        date: "9 AUG 2022",
+        desc: "Swagger API Documentation Implementation Review",
+    },
 ];
 
 export default data
