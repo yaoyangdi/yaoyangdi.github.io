@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ba79fe9.css",
-    "main.js": "/static/js/main.5621a2a3.js",
+    "main.js": "/static/js/main.73afdd13.js",
     "static/js/787.f587e8d5.chunk.js": "/static/js/787.f587e8d5.chunk.js",
     "static/media/jpg": "/static/media/a9843f4f7b19d0b6421f5ca1397caee.4f2ca76c877a44dcea79.jpg",
     "static/media/fliderStation.jpg": "/static/media/fliderStation.0aab89397a799f284418.jpg",
@@ -10,20 +10,20 @@
     "static/media/Java-basic.md": "/static/media/Java-basic.141942139404db3365d3.md",
     "static/media/springboot-hibernate-mysql-configuration.md": "/static/media/springboot-hibernate-mysql-configuration.90e39e577f9abcb13a63.md",
     "static/media/flash-sale-system.md": "/static/media/flash-sale-system.6f471a5ef3b88d6fe91a.md",
+    "static/media/use-swagger-in-spring-boot.md": "/static/media/use-swagger-in-spring-boot.2659b83c9269975fdbf0.md",
     "static/media/deploying-mysql-on-kubernates.md": "/static/media/deploying-mysql-on-kubernates.ed7ffd190215389bec77.md",
     "static/media/how-to-set-up-authentication-token-in-java.md": "/static/media/how-to-set-up-authentication-token-in-java.43f6813b33ef4b45e321.md",
-    "static/media/use-swagger-in-spring-boot.md": "/static/media/use-swagger-in-spring-boot.2488a71b475b02fa2239.md",
     "static/media/my-second-blog.md": "/static/media/my-second-blog.c268f648c36fb314d118.md",
     "static/media/java-error-solution-set.md": "/static/media/java-error-solution-set.13ae31402df6d9360e9e.md",
     "index.html": "/index.html",
     "static/media/program-vs-application.md": "/static/media/program-vs-application.2ce2d229041606ed0d57.md",
     "static/media/redis-vs-mysql.md": "/static/media/redis-vs-mysql.652e3987e54af77974be.md",
     "main.8ba79fe9.css.map": "/static/css/main.8ba79fe9.css.map",
-    "main.5621a2a3.js.map": "/static/js/main.5621a2a3.js.map",
+    "main.73afdd13.js.map": "/static/js/main.73afdd13.js.map",
     "787.f587e8d5.chunk.js.map": "/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ba79fe9.css",
-    "static/js/main.5621a2a3.js"
+    "static/js/main.73afdd13.js"
   ]
 }
