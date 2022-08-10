@@ -4,7 +4,7 @@
 >
 > This experience piqued my curiosity about how API implement authentication and I've recently been thinking about how to make my e-commerce project recognize users for individual actions like adding item to cart. So this blog aims to implement authentication token on the server side so that each API will validate the token before serving.
 
-### Token and User entity creation in JPA
+## Token and User entity creation in JPA
 
 ```java
 // Token entity
@@ -63,11 +63,11 @@ public class User {
 
 > Note that when primary key is string formatted, we need to specify the anotation @GenericGenerator(name="system-uuid", strategy = "uuid") and strategy = GenerationType.**AUTO** since string data not allows auto increment.
 
-### Token Service Implementation
+## Token Service Implementation
 
 First we define the structure of token service class and now it can serve for token creation purpose.
 
-```Java
+```java
 @Service
 public class TokenService {
     @Autowired
@@ -82,7 +82,7 @@ public class TokenService {
     }
 ```
 
-### Create the token in the User signup service method
+## Create the token in the User signup service method
 
 ```java
 // create the token
@@ -94,17 +94,17 @@ We then now bind the user instance with the newly created AutenticationToken ins
 
 
 
-### Validate token before serving
+## Validate token before serving
 
-Inside the `TokenService class `  (mentioned above), 
+Inside the `TokenService class`   (mentioned above), 
 
-1. we firstly defien a method named  `getToken`, which is used to check if there is a user in the database who has this token.
+1. We firstly defien a method named  `getToken`, which is used to check if there is a user in the database who has this token.
 2. Then define `authenticate` & `getUser` methods, given the token return from `getToken` as parameter, which are used  for validation.
 3. We then validate each token from subsequent requests. The code snippet shows in `CartController.java`  and `UserService.java` are the implementations of validation in **add to cart** and **LogIn** scenarios.
 
 *TokenService.java*
 
-```Java
+```java
     /**
      * Service used for retrieving a token by given user instance
      * If the user is not present in db. then return null
@@ -144,7 +144,7 @@ Inside the `TokenService class `  (mentioned above),
 
 *CartController.java*
 
-```Java
+```java
     @PostMapping
     public ResponseEntity<ApiResponse> addToCart(@RequestBody AddToCartDto addToCartDto, @RequestParam("token") String token) {
         // authenticate the token
