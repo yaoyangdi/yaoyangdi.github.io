@@ -65,7 +65,9 @@ const BlogDetail = (props) => {
           // Return default child if it's not an image
           return <p style={{paddingTop: "6px"}}>{children}</p>;
       },
-
+      ol: ({children}) => {
+        return <ol style={{lineHeight: "30px"}}>{children}</ol>;
+      },
       h2: ({children}) => {
             return (
               <h2 style={{"marginTop": "2em"}}>{children}</h2>
