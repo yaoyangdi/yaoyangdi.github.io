@@ -63,7 +63,26 @@ const BlogDetail = (props) => {
               );
           }
           // Return default child if it's not an image
-          return <p style={{lineHeight: "25px"}}>{children}</p>;
+          return <p style={{paddingTop: "6px"}}>{children}</p>;
+      },
+
+      h2: ({children}) => {
+            return (
+              <h2 style={{"marginTop": "2em"}}>{children}</h2>
+
+            );
+        },
+      h4:  ({children}) => {
+        return (
+          <h3 style={{"marginBottom": "-1em"}}>{children}</h3>
+
+        );
+      },
+      blockquote: ({children}) => {
+        return (
+          <div style={{color: "#666","margin": "20px", paddingLeft:"2em", borderLeft:`0.5em rgb(61, 134, 182) solid`,}}>{children}</div>
+
+        );
       },
       }}
       escapeHtml={false}

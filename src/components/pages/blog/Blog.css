@@ -15,7 +15,7 @@
     .blog.timeline.bothSide::before{
         content: '';
         position: absolute;
-        height: 100vh;
+        height: 150%;
         width: 2px;
         left: 50%;
         margin-left: 1.2em;

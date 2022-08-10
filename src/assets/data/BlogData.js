@@ -47,7 +47,7 @@ const data = [
         fileName: "how-to-set-up-authentication-token-in-java",
         title: "How to set up authentication tokens in java",
         date: "8 AUG 2022",
-        desc: "Reviews along with the implemention of flash sales e-commerce application development process",
+        desc: "Code review along with the implemention of flash sales e-commerce application development process",
     },
     {
         id: 8,
@@ -55,6 +55,13 @@ const data = [
         title: "Use Swagger in Spring Boot",
         date: "9 AUG 2022",
         desc: "Swagger API Documentation Implementation Review",
+    },
+    {
+        id: 9,
+        fileName: "json-web-tokens-vs-token-authentication",
+        title: "JSON Web Tokens VS Token Authentication",
+        date: "10 AUG 2022",
+        desc: "Pros and Cons on both JSON Web Tokens and Token Authentication",
     },
 ];
 

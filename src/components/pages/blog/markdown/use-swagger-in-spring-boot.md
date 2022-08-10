@@ -1,6 +1,7 @@
-During the development of our API endpoints, it is essential that there is a API documentation for testing and documentation. Moreover, for the front-end side, it would be much easier to do testing all in together without adding multiple http requests in Postman. 
-
-So Swagger is the thing that I have found recently that is super easy and powerful API documentation generator (since previously we had to manually create server landing page as our API documentation during the flask rest API development due to insufficient knowledge of the latest popular frameworks) 
+> During the development of our API endpoints, it is essential that there is a API documentation for testing and documentation. Moreover, for the front-end side, it would be much easier to do testing all in together without adding multiple http requests in Postman. 
+>
+> So Swagger is the thing that I have found recently that is super easy and powerful API documentation generator (since previously we had to manually create server landing page as our API documentation during the flask rest API development due to insufficient knowledge of the latest popular frameworks) 
+>
 
 
 
