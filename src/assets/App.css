@@ -196,6 +196,7 @@ header ul li a:hover{
     color: white;
 }
 
+
 .card-content{
     
     display: flex;
@@ -217,7 +218,53 @@ header ul li a:hover{
     color:gray;
     font-weight: 600;
 }
+.card4Project-layout{
+    display: flex;
+    border-radius: 0.5em;
+    width:100%;
+    margin-bottom: 1.5em;
+    color: white;
+}
 
+.card4Project {    /* Card for displaying projects */
+    display: inline-block;
+    width: 30%;
+    border-radius: 0.5em;
+    height:min-content;
+    color: white;
+    transition: 0.5s;
+    margin-right: 2em;
+
+}
+
+.card4Project-content{
+
+    display: inline-block;
+    text-align: start;
+    background-color: #fff;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 0.5em;
+    padding-top: 0.8em;   /* so that the content is central aligned */
+    width: 100%;
+    color:#000;
+    height: fit-content;
+    min-height: 2em;
+}
+
+.card4Project-content p{
+    font-size: 0.9em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    width: 90%;
+}
+.card4Project-content a{
+    width: 90%;
+    font-size: .9em;
+    text-decoration: none;
+    color:gray;
+    font-weight: 600;
+}
 
 /* Blog Overview */
 .blogOverview.container h1{

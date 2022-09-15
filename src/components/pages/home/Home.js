@@ -1,7 +1,9 @@
 import React from 'react'
 import selfie from '../../../assets/images/selfie.jpg'
 import Card from './Card'
-import data from '../../../assets/data/BlogData'
+import blogData from '../../../assets/data/BlogData'
+import projectData from '../../../assets/data/ProjectData'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -11,6 +13,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { sortByDate } from '../../../helpers';
+import Card4Proj from './Card4Proj'
 
 const Home = () => {
   return (
@@ -23,7 +26,7 @@ const Home = () => {
             
             <div className='home-selfie-desc email'>
               <div style={{fontWeight:"bold", fontSize:"1.2em", marginRight:"0.6em"}}>email: </div> 
-                <div>dingyaoyang2019@gmail.com<br/></div> 
+                <div>yaoyangding.work@gmail.com<br/></div> 
             </div>
           </div>
         </div>
@@ -62,9 +65,20 @@ const Home = () => {
             <p>
               I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way :D
             </p>
+            
+            <h2>Latest Projects</h2>
+            <div className='home-content card4Project-layout'>
+              {sortByDate(projectData, false).slice(0,3).map((val, index) => {
+                return (
+                        <Card4Proj key={index}  title={val.title} desc={val.desc} date={val.date} link={val.url} />
+                )
+              })}
+            </div>
+
+
             <h2>Latest Reviews</h2>
             <div className='home-content card'>
-              {sortByDate(data, false).slice(0,4).map((val, index) => {
+              {sortByDate(blogData, false).slice(0,4).map((val, index) => {
                 return (
                         <Card key={index}  title={val.title} desc={val.desc} date={val.date} link={`/reviews/${val.fileName}`} />
                 )

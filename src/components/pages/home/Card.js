@@ -7,9 +7,12 @@ const card = (props) => {
         <h3 >{props.title}</h3>
        
           <div className='card-content'>
-              <Link to={props.link}>
-                 <p>{props.desc}</p>
-              </Link>
+              <a href={props.link}>
+                <p>{props.desc}</p>
+              </a>
+              {/* <Link to={props.link}>
+                <p>{props.desc}</p>
+              </Link> */}
               <div className={props.hide ? 'card-content date hide' : 'card-content date'}>
                 <p>{props.date}</p>
               </div>

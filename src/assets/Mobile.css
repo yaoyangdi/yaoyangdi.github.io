@@ -206,6 +206,18 @@
         display: none;
     }
 
+    .card4Project {    /* Card for displaying projects */
+        display: inline-block;
+        width: 70%;
+        border-radius: 0.5em;
+        height: fit-content;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    
+
+
     /* Blog Overview */
 
     .blogOverview.container h1{
