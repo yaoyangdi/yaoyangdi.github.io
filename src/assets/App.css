@@ -17,7 +17,6 @@
 
 body{
     background-color: rgb(240, 242, 242);
-
 }
 
 /* 
@@ -196,9 +195,7 @@ header ul li a:hover{
     color: white;
 }
 
-
 .card-content{
-    
     display: flex;
     align-items: center;
     text-align: center;
@@ -218,10 +215,11 @@ header ul li a:hover{
     color:gray;
     font-weight: 600;
 }
+
 .card4Project-layout{
     display: flex;
     border-radius: 0.5em;
-    width:100%;
+    width:90%;
     margin-bottom: 1.5em;
     color: white;
 }

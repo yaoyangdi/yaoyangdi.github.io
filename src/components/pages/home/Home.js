@@ -75,7 +75,6 @@ const Home = () => {
               })}
             </div>
 
-
             <h2>Latest Reviews</h2>
             <div className='home-content card'>
               {sortByDate(blogData, false).slice(0,4).map((val, index) => {
