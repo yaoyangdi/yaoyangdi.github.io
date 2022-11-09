@@ -5,17 +5,20 @@
     .blog.date.left{
         text-align: end;
         float: right;
-        margin-right: -2em;
+        margin-right: 0em;
         padding-bottom: 3%;
     }
     .blog.date.singleSide{
         margin-left: 5%;
     }
 
+    .blog.timeline{
+    }
+
     .blog.timeline.bothSide::before{
         content: '';
         position: absolute;
-        height: 150%;
+        height: 55em;
         width: 2px;
         left: 50%;
         margin-left: 1.2em;
@@ -31,13 +34,15 @@
         margin-top: 1em;
         background-color: grey;
     }
+    .blog.timeline{
+
+    }
 
     .blog.timeline ul li{
         position: relative;
         list-style: none;
         margin-top: -0.2em;
     }
-
 
     .blog.group{
         margin-top: 2em;
@@ -52,6 +57,7 @@
         margin-bottom: -0.5em;
         width: 90%;
     }
+  
     .blog.timeline.card.singleSide:first-child::after{
         content: '';
         position:absolute;

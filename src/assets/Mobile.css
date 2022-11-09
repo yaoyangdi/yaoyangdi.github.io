@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 940px) {
     /* Header */
     header {
     height: 4em;
@@ -156,7 +156,7 @@
     }
 
     .home-content.card {
-        width: 70%;
+        width: 100%;
     }
 
     /* Card */
@@ -168,7 +168,7 @@
 
     .card {
         display: inline-block;
-        width: 95%;
+        width: 85%;
         border-radius: 0.5em;
         height: fit-content;
         color: white;
@@ -208,15 +208,46 @@
 
     .card4Project {    /* Card for displaying projects */
         display: inline-block;
-        width: 70%;
+        width: 85%;
         border-radius: 0.5em;
         height: fit-content;
         color: white;
         transition: 0.5s;
+        margin-bottom: 1.5em;
     }
-    
-    
 
+
+    .card4Project.date {
+        margin-left: 2em;
+    }
+
+
+    .card4Project-layout{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        border-radius: 0.5em;
+        margin-bottom: 1.5em;
+        color: white;
+    }
+
+    .card4Project-content{
+        display: inline-block;
+        text-align: start;
+        background-color: #fff;
+        border-bottom-right-radius: 0.5em;
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+        padding-top: 0.8em;   /* so that the content is central aligned */
+        width: 100%;
+        color:#000;
+        height: fit-content;
+        min-height: 2em;
+    }
+
+    .card4Project-content p{
+        font-size: 0.8em;
+    }
 
     /* Blog Overview */
 
@@ -226,6 +257,7 @@
         font-size: var(--title);
         line-height: 1em;
     }
+    
     .blogOverview.container.p{
         margin-left: 0em;
         margin-top: 0em;

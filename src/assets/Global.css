@@ -30,7 +30,8 @@
     font-size: 0.85em;
     color: grey;
     width: 10em;
-    padding-right: 2em;
+    margin-left: -1em;
+    padding-right: 0em;
     background-color: transparent;
 }
 

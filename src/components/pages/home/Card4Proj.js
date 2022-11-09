@@ -10,7 +10,7 @@ const Card4Proj = (props) => {
               <a href={props.link}  target="_blank">
                 <p>{props.desc}</p>
               </a>
-              <div style = {{"marginLeft":"-1em"}} className={props.hide ? 'card-content date hide' : 'card-content date'}>
+              <div className={props.hide ? 'card-content date hide' : 'card-content date'}>
                 <p>{props.date}</p>
               </div>
           </div>

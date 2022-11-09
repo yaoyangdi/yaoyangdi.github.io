@@ -10,6 +10,7 @@ import About from './components/pages/about/About';
 import './assets/App.css'
 import './assets/Global.css'
 import './assets/Mobile.css'
+import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
           <Route path='/project' element={<Project/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
-
+        <Footer/>
       </Router>
     </>
   )

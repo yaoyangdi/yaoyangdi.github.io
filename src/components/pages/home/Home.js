@@ -63,7 +63,8 @@ const Home = () => {
           <div className='home-content'>
             <h2>From the Blog</h2>
             <p>
-              I occasionally post my personal projects and reviews based on knowlege I 've gained. Hopefully it could help me organize things in a better way :D
+            🔘 I occasionally post my personal projects and reviews based on knowlege I 've gained. 
+              <br></br>🔘 Hopefully it could help me organize things in a better way :D
             </p>
             
             <h2>Latest Projects</h2>

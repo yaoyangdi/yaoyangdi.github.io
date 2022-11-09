@@ -149,6 +149,8 @@ header ul li a:hover{
 }
 .home-content p{
     font-size: 1em;
+    line-height: 1.7em;
+
 }
 .home-content.card {
     display: flex;
@@ -205,7 +207,6 @@ header ul li a:hover{
     width: 80%;
     color:#000;
     padding-left: -0.5em;
-
 }
 
 .card-content a{
@@ -225,7 +226,6 @@ header ul li a:hover{
 }
 
 .card4Project {    /* Card for displaying projects */
-    display: inline-block;
     width: 30%;
     border-radius: 0.5em;
     height:min-content;
@@ -265,6 +265,10 @@ header ul li a:hover{
 }
 
 /* Blog Overview */
+.blogOverview.container{
+    height: 100%;
+}
+
 .blogOverview.container h1{
     margin-left: 1em;
     font-size: var(--title);
@@ -275,6 +279,7 @@ header ul li a:hover{
     margin-left: 2.5em;
     margin-top: -0.75em;
 }
+
 
 /* Blog Detail */
 .blogDetail.container {
@@ -297,6 +302,7 @@ header ul li a:hover{
     text-align: center;
     font-size: var(--title);
 }
+
 .blogDetail.metadata p{
     text-align: center;
     color: grey;
@@ -310,4 +316,13 @@ header ul li a:hover{
 
 .blogDetail.image img{
     width: 27em;
+}
+
+.footer.container {
+    text-align: center;
+    height: 5em;
+    font-size: .9em;
+    color: gray;
+    clear: both;
+    padding-top: 3em;
 }
